@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пшеница в космосе</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="index.html" class="back-link">← Назад к темам</a>
+  <h1>🌾 Пшеница в космосе</h1>
+ <img src="images/wheat.jpg" alt="Пшеница" class="hero">
+  <p>Пшеница использовалась для отработки технологии выращивания продуктов питания в космосе.</p>
+
+  <h2>Достижения</h2>
+  <p>На станции «Мир» удалось получить жизнеспособные семена, а на китайской станции «Тяньгун» — провести полный цикл выращивания и собрать <strong>второй урожай из «космических» семян</strong>.</p>
+
+  <h2>Проблема бесплодия злаков</h2>
+  <p>Самое интересное — это решение проблемы «бесплодия» злаков в космосе. Оказалось, что виной всему газ <strong>этилен</strong>, который выделяли сами растения. Учёные подобрали специальный устойчивый сорт <strong>«Апогей»</strong>, и он смог дать семена, которые по качеству не уступают земным.</p>
+
+  <p>Это важный шаг к созданию автономных космических оранжерей для будущих длительных миссий.</p>
+
+  <button class="share-btn" onclick="sharePage()">🔗 Поделиться</button>
+  <script>
+    function sharePage() {
+      if (navigator.share) navigator.share({ title: document.title, url: location.href });
+      else { navigator.clipboard.writeText(location.href); alert('Ссылка скопирована!'); }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Животные и растения в космосе</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🚀 Животные и растения в космосе</h1>
+  <p>Космическая биология: как живые организмы переживают невесомость и радиацию.</p>
+
+  <a href="stick-insects.html" class="menu-card">
+    <h3><span class="emoji">🪲</span>Палочники</h3>
+    <p>Эмбриогенез в невесомости</p>
+  </a>
+
+  <a href="snails.html" class="menu-card">
+    <h3><span class="emoji">🐌</span>Улитки</h3>
+    <p>Вестибулярный аппарат и регенерация</p>
+  </a>
+
+  <a href="cockroaches.html" class="menu-card">
+    <h3><span class="emoji">🪳</span>Тараканы</h3>
+    <p>Адаптация и замкнутые системы</p>
+  </a>
+
+  <a href="lettuce.html" class="menu-card">
+    <h3><span class="emoji">🥬</span>Салат</h3>
+    <p>Система Veggie на МКС</p>
+  </a>
+
+  <a href="fruit-flies.html" class="menu-card">
+    <h3><span class="emoji">🪰</span>Мухи-дрозофилы</h3>
+    <p>Генетика, сердце, старение</p>
+  </a>
+
+  <a href="wheat.html" class="menu-card">
+    <h3><span class="emoji">🌾</span>Пшеница</h3>
+    <p>Проблема бесплодия злаков</p>
+  </a>
+
+  <a href="zinnia.html" class="menu-card">
+    <h3><span class="emoji">🌸</span>Цинния</h3>
+    <p>Первый цветок в космосе</p>
+  </a>
+
+  <button class="share-btn" onclick="sharePage()">🔗 Поделиться страницей</button>
+
+  <script>
+    function sharePage() {
+      if (navigator.share) {
+        navigator.share({ title: document.title, url: location.href });
+      } else {
+        navigator.clipboard.writeText(location.href);
+        alert('Ссылка скопирована!');
+      }
+    }
+  </script>
+</body>
+</html>
